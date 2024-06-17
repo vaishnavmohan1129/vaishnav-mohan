@@ -1,0 +1,818 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+nav ul{
+    display: flex;
+    margin-right: 50px;
+}
+nav li{
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    margin-left: 40px;
+    font-size: 25px;
+    color: white;
+}
+nav li a:hover{     
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+body{
+    background-color: black;
+}
+.nav h1{
+    color: white;
+    font-size: 30px;
+    margin-left: 40px;
+}
+.nav span{
+    color: yellow;
+}
+.main{
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.txt{
+    color: white;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+.main img{
+    margin-right: 270px ;
+}
+.txt h1{
+    margin-bottom: 30px;
+}
+.txt span{
+    color: yellow;
+}
+.txt h3{
+    margin-bottom: 30px;
+    font-size: 25px;
+    margin-left: 70px;
+}
+.txt p{
+    font-weight: lighter;
+    font-size: 17px;
+}
+.txt a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.txt button{
+    margin-top: 50px;
+    width: 130px;
+    height: 40px;
+    margin-left: 130px;
+    border-radius: 30px;
+}
+.abt{
+    color: white;
+    margin-top: 110px;
+    
+}
+.abt h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+.abt p{
+    width: 1300px;
+    margin-top: 40px;
+    font-size: 25px;
+    margin-left: 130px;
+
+}
+.tr{
+    width: 220px;
+    height: 3px;
+    background-color: white;
+    top: 820px;
+    position: absolute;
+    left: 650px;
+}
+.to{
+    background-color: yellow;
+    width: 150px;
+    height: 3px;
+    top: 820px;
+    position: absolute;
+    left: 600px;
+}
+.bo{
+    margin-top: 350px;
+    margin-left: -670px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+}
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.skill-bar{
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+}
+.skill-per{
+    height: 14px;
+    background: yellow;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s;
+}
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: white;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translatex(50%);
+}
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars{
+    form{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+.ji{
+    position: absolute;
+    color: white;
+    top: 2170px;
+    left: 750px;
+    
+}
+.ji h1{
+    font-size: 50px;
+}
+.f1{
+    
+        width: 110px;
+        height: 3px;
+        background-color: white;
+        top: 2230px;
+        position: absolute;
+        left: 750px;
+    
+}
+.f2{
+    width: 70px;
+    height: 3px;
+    background-color: yellow;
+    top: 2230px;
+    position: absolute;
+    left: 750px;
+}
+.cm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   box-sizing: border-box;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.container .progress{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: white;
+    background: #444 linear-gradient(to right, transparent 50%, var(--clr) 0);
+}
+.container .progress h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    z-index: 1;
+    font-weight: 500;
+}
+.container .progress h3 span{
+    font-size: 0.65em;
+    font-weight: 400;
+}
+.container .progress h4{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-weight: 500;
+    color: var(--clr);
+    text-transform: uppercase;
+}
+.container .progress::before{
+    content: '';
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+}
+.container .progress::after{
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border-radius: 50%;
+    background: #222;
+}
+.container .progress::before{
+    background: var(--clr);
+    transform: rotate(calc(((var(--i)- 50)*0.01turn)));
+}
+@property --tutorial-value {
+    syntax: '<integer>'; inherits: false;
+    initial-value: 1;
+ }
+ @keyframes x-tutorial {
+    to {
+       --tutorial-value: 97;
+    }
+ }
+ @keyframes y-tutorial {
+    to {
+       --tutorial-value: 87;
+    }
+ }
+  @keyframes z-tutorial {
+    to {
+       --tutorial-value: 100;
+    }
+}
+@keyframes a-tutorial {
+    to {
+       --tutorial-value: 89;
+    }
+}
+ .tutorial-bar {
+    width: 150px;
+    height: 150px;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 137px;
+    font-size: 20px;
+    padding-left: 12px;
+ }
+ .tutorial-bar::before {
+    counter-reset: percentage var(--tutorial-value);
+    content: counter(percentage) '%';
+ }
+ .x {
+    background:
+       radial-gradient(closest-side, white 80%, transparent 60% 40%),
+       conic-gradient(yellow calc(var(--tutorial-value) * 1%), gray 0);
+    animation: x-tutorial 1s 1 forwards;
+ }
+ .x::before {
+    animation: x-tutorial 2s 1 forwards;
+ }
+ .y {
+    background:
+       radial-gradient(closest-side, white 80%, transparent 60% 40%),
+       conic-gradient(yellow calc(var(--tutorial-value) * 1%), gray 0);
+    animation: y-tutorial 1s 1 forwards;
+ }
+ .y::before {
+    animation: y-tutorial 2s 1 forwards;
+ }
+  .z {
+    background:
+       radial-gradient(closest-side, white 80%, transparent 60% 40%),
+       conic-gradient(yellow calc(var(--tutorial-value) * 1%), gray 0);
+    animation: z-tutorial 1s 1 forwards;
+ }
+ .z::before {
+    animation: z-tutorial 2s 1 forwards;
+ }
+ .a {
+    background:
+       radial-gradient(closest-side, white 80%, transparent 60% 40%),
+       conic-gradient(yellow calc(var(--tutorial-value) * 1%), gray 0);
+    animation: a-tutorial 1s 1 forwards;
+ }
+ .a::before {
+    animation: a-tutorial 2s 1 forwards;
+ }
+.bodu {
+    top: 2430px;
+    left: 800px;
+    position: absolute;
+   font-family: verdana;
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px; 
+ } 
+ h2 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    margin-left: 90px;
+ }
+ progress {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+ }
+ .bdu {
+    top: 2700px;
+    left: 800px;
+    position: absolute;
+   font-family: verdana;
+    display: flex;
+    justify-content: space-around;
+    max-width: 500px; 
+ }
+ .protx{
+    margin-top: 130px;
+    text-align: center;
+    color: white;
+ }
+ .p1{
+        width: 170px;
+        height: 3px;
+        background-color: white;
+        top: 3075px;
+        position: absolute;
+        left: 680px;
+ }
+ .p2{
+    width: 90px;
+    height: 3px;
+    background-color: yellow;
+    top: 3075px;
+    position: absolute;
+    left: 680px;
+ }
+ .p3{
+    background-color: white;
+    width: 200px;
+    height: 320px;
+    color: black;
+    margin-left: 120px;
+    margin-top: 70px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 13px yellow;
+    
+ }
+ .p3 h2{
+    color: black;
+    margin-left: -5px;
+    font-size: 25px;
+    margin-top: 10px;
+    
+ }
+ .p3 a{
+    color: white;
+    text-decoration: none;
+ }
+.p3 button{
+    background-color: black;
+    width: 140px;
+    height: 35px;
+    margin-bottom: 30px;
+    margin-top: -70px;
+    margin-left: 30px;
+}
+.p4{
+    background-color: white;
+    width: 200px;
+    height: 320px;
+    color: black;
+    margin-left: 160px;
+    margin-top: 70px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 13px yellow;
+    margin-left: 250px;
+    
+ }
+ .p4 h2{
+    color: black;
+    margin-left: -5px;
+    font-size: 25px;
+    margin-top: 10px;
+    
+ }
+ .p4 a{
+    color: white;
+    text-decoration: none;
+ }
+.p4 button{
+    background-color: black;
+    width: 140px;
+    height: 35px;
+    margin-bottom: 30px;
+    margin-top: -70px;
+    margin-left: 30px;
+}
+.proj{
+    display: flex;
+    margin-left: 70px;
+}
+.p4 img{
+    margin-left: -70px;
+}
+.p5{
+    background-color: white;
+    width: 200px;
+    height: 320px;
+    color: black;
+    margin-left: 160px;
+    margin-top: 70px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 13px yellow;
+    margin-left: 250px;
+    
+ }
+ .p5 h2{
+    color: black;
+    margin-left: -5px;
+    font-size: 25px;
+    margin-top: 10px;
+    
+ }
+ .p5 a{
+    color: white;
+    text-decoration: none;
+ }
+.p5 button{
+    background-color: black;
+    width: 140px;
+    height: 35px;
+    margin-bottom: 30px;
+    margin-top: -70px;
+    margin-left: 30px;
+}
+.proj{
+    display: flex;
+}
+.p5 img{
+    margin-top: 30px;
+}
+.p6{
+    background-color: white;
+    width: 200px;
+    height: 320px;
+    color: black;
+    margin-left: 190px;
+    margin-top: 70px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 13px yellow;
+   
+ }
+ .p6 h2{
+    color: black;
+    margin-left: -5px;
+    font-size: 25px;
+    margin-top: 10px;
+    
+ }
+ .p6 a{
+    color: white;
+    text-decoration: none;
+ }
+.p6 button{
+    background-color: black;
+    width: 140px;
+    height: 35px;
+    margin-bottom: 30px;
+    margin-top: -70px;
+    margin-left: 30px;
+}
+ .p6 img{
+    margin-top: 30px;
+    margin-left: 20px;
+} 
+.c1{
+    text-align: center;
+    color: white;
+    margin-top: 70px;
+    margin-left: 70px;
+}
+.c2{
+    width: 220px;
+        height: 3px;
+        background-color: white;
+        top: 3975px;
+        position: absolute;
+        left: 690px;
+}
+.c3{
+    width: 110px;
+    height: 3px;
+    background-color: yellow;
+    top: 3975px;
+    position: absolute;
+    left: 680px;
+}
+.form{
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+.form label{
+    margin-bottom: 50px;
+    font-size: 30px;
+    margin-left: -630px;
+}
+.form input{
+    width: 700px;
+    height: 44px;
+    margin-bottom: 30px;
+    padding-left: 34px;
+}
+.topo{
+    margin-left: -70px;
+}
+.topo textarea{
+    margin-left: 80px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.btn button{
+    margin-top: 50px;
+   font-size: 25px;
+   font-weight: bold;
+
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    margin-left: -60px;
+    width: 150px;
+    background-color: white;
+    box-shadow: 5px 5px 13px yellow;
+    border-radius: 30px;
+  }
+
+.btn button:hover {
+    background-color: #45a049;
+  }
+.last{
+    border-radius: 30px;
+    margin-left: 300px;
+    text-align: center;
+    margin-top: 200px;
+    background-color: #222;
+    padding: 10px;
+    width: 1000px;
+    display: flex;
+    margin-bottom: 50px;
+    
+
+}
+.menu-line{
+    height: 3px;
+    width: 20px;
+    background-color: white;
+    margin-bottom: 3px;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.last i{
+    
+    font-size: 40px;
+    margin-left: 60px; 
+    color: white;
+    
+}
+.l1{
+    margin-left: 250px;
+}
+@media only screen and (max-width: 600px) {
+    .main{
+        display: block;
+    }
+    .txt{
+        width: 250px;
+        margin-left: 30px;
+    }
+    .main img{
+        margin-left: 43px;
+        margin-top: 50px;
+        width: 200px;
+    }
+    .txt button{
+        margin-left: 40px;
+    }
+    .txt h3{
+        margin-left: -5px;
+    }
+    .abt p{
+        width: 250px;
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .abt h1{
+        font-size: 30px;
+        margin-left: -90px;
+        margin-top: -30px;
+       
+    }
+    .tr{
+        width: 120px;
+        margin-top: 270px;
+        margin-left: -570px;
+    }
+    .to{
+        margin-top: 270px;
+        width: 70px;
+        margin-left: -530px;
+    }
+    .ji{
+        display: block;
+    }
+    .ji h1{
+        margin-left: -650px;
+        font-size: 30px;
+        margin-top: -250px;
+    }
+    .f1{
+        width: 70px;
+        margin-top: -270px;
+        margin-left: -650px;
+    }
+    .f2{
+        width: 30px;
+        margin-top: -270px;
+        margin-left: -650px;
+    }
+    .bo{
+        width: 250px;
+        margin-top: 170px;
+        margin-left: 30px;
+    }
+    .bodu{
+        display: block;
+        margin-left: -870px;
+        margin-top: 150px;
+        
+    }
+   
+    .tutorial-bar-container h2{
+        margin-top: 70px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+    }
+    .bdu{
+        display: block;
+        margin-left: -870px;
+        margin-top: 500px;
+    }
+    .protx{
+        margin-top: 1400px;
+    }
+    .protx h1{
+        margin-top: 540px;
+        font-size: 30px;
+        align-items: center;
+        margin-left: -70px;
+    }
+    .p1{
+        width: 120px;
+        margin-top: 890px;
+        margin-left: -590px;
+    }
+    .p2{
+        width: 50px;
+        margin-top: 890px;
+        margin-left: -590px;
+    }
+    .proj{
+        display: block;
+    }
+    .p3{
+        margin-left: -30px;
+    }
+    .p4{
+        margin-top: 80px;
+        margin-left: -30px;
+    }
+    .p5{
+        margin-top: 80px;
+        margin-left: -30px;   
+    }
+    .p6{
+        margin-top: 80px;
+        margin-left: 40px;
+    }
+    .c1{
+        margin-top: 130px;
+        margin-left: -90px;
+        font-size: 30px;
+    }
+    .c2{
+        width: 150px;
+        margin-top: 1740px;
+        margin-left: -630px;
+    }
+    .c3{
+        width: 90px;
+        margin-top: 1740px;
+        margin-left: -630px;
+    }
+    .form{
+        width: 200px;
+        margin-left: 370px;
+    }
+    lable{
+        font-size: 5px;
+    }
+    .form input{
+        width: 250px;
+        margin-left: -650px;
+    }
+    .form textarea{
+        width: 250px;
+        margin-left: -570px;
+    }
+    .btn button{
+        margin-left: -400px;
+        padding: -30px;
+    }
+    .last{
+        width: 550px;
+        margin-left: -190px;
+    }
+    .last i{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .nav h1{
+        font-size: 20px;
+        margin-left: 14px;
+        margin-top: -35px;
+    }
+    nav ul{
+        display: block;
+        display: none;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right:100px;
+        top: 30px;
+    }
+    .showmenu{
+        display: block;
+    }
+  }
