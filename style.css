@@ -663,11 +663,14 @@ body{
        
     }
     .tr{
+        display: none;
         width: 120px;
         margin-top: 270px;
         margin-left: -570px;
     }
     .to{
+        display: none;
+        display: none;
         margin-top: 270px;
         width: 70px;
         margin-left: -530px;
@@ -681,11 +684,13 @@ body{
         margin-top: -250px;
     }
     .f1{
+        display: none;
         width: 70px;
         margin-top: -270px;
         margin-left: -650px;
     }
     .f2{
+        display: none;
         width: 30px;
         margin-top: -270px;
         margin-left: -650px;
@@ -722,11 +727,13 @@ body{
         margin-left: -70px;
     }
     .p1{
+        display: none;
         width: 120px;
         margin-top: 890px;
         margin-left: -590px;
     }
     .p2{
+        display: none;
         width: 50px;
         margin-top: 890px;
         margin-left: -590px;
@@ -755,11 +762,13 @@ body{
         font-size: 30px;
     }
     .c2{
+        display: none;
         width: 150px;
         margin-top: 1740px;
         margin-left: -630px;
     }
     .c3{
+        display: none;
         width: 90px;
         margin-top: 1740px;
         margin-left: -630px;
