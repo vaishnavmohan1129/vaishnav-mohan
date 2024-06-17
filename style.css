@@ -111,7 +111,7 @@ body{
     left: 600px;
 }
 .bo{
-    margin-top: 400px;
+    margin-top: 350px;
     margin-left: -670px;
     display: flex;
     align-items: center;
@@ -681,7 +681,7 @@ body{
     .ji h1{
         margin-left: -650px;
         font-size: 30px;
-        margin-top: -250px;
+        margin-top: -290px;
     }
     .f1{
         display: none;
