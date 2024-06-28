@@ -706,11 +706,11 @@ body{
     .bo{
         width: 250px;
         margin-top: 230px;
-        margin-left: 80px;
+        margin-left: 50px;
     }
     .bodu{
         display: block;
-        margin-left: -800px;
+        margin-left: -850px;
         margin-top: 1100px;
         
     }
@@ -722,7 +722,7 @@ body{
     }
     .bdu{
         display: block;
-        margin-left: -800px;
+        margin-left: -850px;
         margin-top: 1450px;
     }
     .protx{
