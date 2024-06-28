@@ -636,16 +636,22 @@ body{
     .main{
         display: block;
     }
+    
     .txt{
         width: 250px;
-        margin-left: 30px;
+        margin-left: 65px;
+    }
+    .txt p{
+        font-size: 20px;
     }
     .main img{
-        margin-left: 43px;
+        margin-left: 75px;
         margin-top: 50px;
         width: 200px;
     }
     .txt button{
+
+        padding-bottom: 20px;
         margin-left: 40px;
     }
     .txt h3{
@@ -653,8 +659,9 @@ body{
     }
     .abt p{
         width: 250px;
-        font-size: 10px;
-        margin-left: 10px;
+        font-size: 15px;
+        margin-left: 60px;
+        
     }
     .abt h1{
         font-size: 30px;
@@ -679,9 +686,10 @@ body{
         display: block;
     }
     .ji h1{
-        margin-left: -650px;
+       
+        margin-left: -590px;
         font-size: 30px;
-        margin-top: -290px;
+        margin-top: 690px;
     }
     .f1{
         display: none;
@@ -697,13 +705,13 @@ body{
     }
     .bo{
         width: 250px;
-        margin-top: 170px;
-        margin-left: 30px;
+        margin-top: 230px;
+        margin-left: 80px;
     }
     .bodu{
         display: block;
-        margin-left: -870px;
-        margin-top: 150px;
+        margin-left: -800px;
+        margin-top: 1100px;
         
     }
    
@@ -714,11 +722,12 @@ body{
     }
     .bdu{
         display: block;
-        margin-left: -870px;
-        margin-top: 500px;
+        margin-left: -800px;
+        margin-top: 1450px;
     }
     .protx{
-        margin-top: 1400px;
+        margin-top: 1450px;
+        margin-left: 50px;
     }
     .protx h1{
         margin-top: 540px;
@@ -742,23 +751,23 @@ body{
         display: block;
     }
     .p3{
-        margin-left: -30px;
+        margin-left: 10px;
     }
     .p4{
         margin-top: 80px;
-        margin-left: -30px;
+        margin-left: 10px;
     }
     .p5{
         margin-top: 80px;
-        margin-left: -30px;   
+        margin-left: 10px;   
     }
     .p6{
         margin-top: 80px;
-        margin-left: 40px;
+        margin-left: 80px;
     }
     .c1{
         margin-top: 130px;
-        margin-left: -90px;
+        margin-left: -70px;
         font-size: 30px;
     }
     .c2{
@@ -774,10 +783,11 @@ body{
         margin-left: -630px;
     }
     .form{
-        width: 200px;
+        width: 260px;
         margin-left: 370px;
     }
     lable{
+        width: 300px;
         font-size: 5px;
     }
     .form input{
@@ -793,8 +803,8 @@ body{
         padding: -30px;
     }
     .last{
-        width: 550px;
-        margin-left: -190px;
+        width: 650px;
+        margin-left: -150px;
     }
     .last i{
         font-size: 25px;
@@ -804,11 +814,12 @@ body{
         flex-direction: column;
     }
     .nav h1{
-        font-size: 20px;
-        margin-left: 14px;
+        font-size: 25px;
+        margin-left: 40px;
         margin-top: -35px;
     }
     nav ul{
+        margin-top: 50px;
         display: block;
         display: none;
     }
@@ -818,7 +829,7 @@ body{
     .menu{
         display: block;
         position: absolute;
-        right:100px;
+        right:75px;
         top: 30px;
     }
     .showmenu{
