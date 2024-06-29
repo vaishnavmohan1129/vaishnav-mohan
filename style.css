@@ -6,10 +6,20 @@
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
+    animation-name: u;
+    animation-duration: 2s;
+   
+}
+@keyframes u {
+    100%{
+        transform: translatey(100%);
+    }
+    
 }
 nav ul{
     display: flex;
     margin-right: 50px;
+    
 }
 nav li{
     list-style: none;
@@ -45,9 +55,28 @@ body{
     color: white;
     margin-left: 200px;
     margin-top: 40px;
+    animation-name: w;
+    animation-duration: 2s;
+}
+@keyframes w {
+    0%{
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    
 }
 .main img{
     margin-right: 270px ;
+    animation-name: im;
+    animation-duration: 3s;
+}
+@keyframes im {
+    100%{
+        transform: translateX(20%)
+       
+    }
+
+    
 }
 .txt h1{
     margin-bottom: 30px;
@@ -80,6 +109,15 @@ body{
 .abt{
     color: white;
     margin-top: 110px;
+    animation-name: ab;
+    animation-duration: 2s;
+    
+}
+@keyframes ab {
+    0%{
+        opacity: 0;
+        transform: translateX(20%);
+    }
     
 }
 .abt h1{
